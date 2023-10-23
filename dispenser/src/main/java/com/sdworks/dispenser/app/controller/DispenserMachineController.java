@@ -28,11 +28,15 @@ public class DispenserMachineController implements IDispenserMachine {
 
     public void insertCoin(double coin) {
         if (isValidCoin(coin)) {
-            System.out.println("Inserted coins -> " + coin + " EUR");
+            System.out.println("Inserted coin -> " + coin + " EUR");
             dispenserMachine.setBalance(dispenserMachine.getBalance() + coin);
         } else {
             throw new IllegalArgumentException("Invalid coin");
         }
+    }
+
+    public void getTotalOfInsertedCoins() {
+        System.out.println("Total amount: " + dispenserMachine.getBalance());
     }
 
     public boolean isValidCoin(double coin) {
