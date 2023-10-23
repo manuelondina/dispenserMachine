@@ -35,10 +35,6 @@ public class DispenserMachineController implements IDispenserMachine {
         }
     }
 
-    public void getTotalOfInsertedCoins() {
-        System.out.println("Total amount: " + dispenserMachine.getBalance());
-    }
-
     public boolean isValidCoin(double coin) {
         return CoinValidatorService.isValidCoin(coin);
     }

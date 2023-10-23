@@ -26,14 +26,8 @@ public class TheDispenserApplication {
 		dispenserMachine.insertCoin(1.00);
 		dispenserMachine.insertCoin(0.50);
 
-		// Should display total amount
-		dispenserMachine.getTotalOfInsertedCoins();
-
 		// Then user buys a drink
 		dispenserMachine.buyDrink("RedBull");
-
-		// Should display total amount after buying a drink
-		dispenserMachine.getTotalOfInsertedCoins();
 
 		// Given same user whom has inserted more coins
 		dispenserMachine.insertCoin(1.00);

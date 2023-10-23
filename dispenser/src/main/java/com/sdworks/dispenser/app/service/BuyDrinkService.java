@@ -14,6 +14,7 @@ public class BuyDrinkService {
             if (dispenserMachine.getBalance() >= drink.getPrice()) {
                 dispenserMachine.setBalance(dispenserMachine.getBalance() - drink.getPrice());
                 System.out.println("Enjoy your " + drink.getName());
+                System.out.println("Your amount is " + dispenserMachine.getBalance());
             } else {
                 throw new IllegalArgumentException("Insufficient balance");
             }
